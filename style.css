@@ -1091,7 +1091,7 @@ header .second:hover {
     }
 
     .songsCard ul li {
-        width: 120px;
+        width: 135px;
         flex-shrink: 0;
     }
 
@@ -1234,8 +1234,8 @@ header .second:hover {
     }
 
     .playAndImg {
-        width: 118.797px;
-        height: 118.797px;
+        width: 135.797px;
+        height: 135.797px;
     }
 
     .playAndImg img {
