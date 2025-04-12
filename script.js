@@ -6,7 +6,7 @@ document.querySelectorAll('.subCategories > section .text a:last-child').forEach
         const collapsedHeights = {
             1: '269.88px',
             2: '229.44px',
-            3: '269.88px',
+            3: '262.88px',
             4: '222.9px',
             5: '222.9px',
             6: '222.9px'
