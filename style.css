@@ -1134,7 +1134,7 @@ filter: brightness(10);
 
 
     .songsCard ul li {
-        width: 150px;
+        width: 152px;
         flex-shrink: 0;
         gap: 15px;
         padding: 8px;
@@ -1328,8 +1328,8 @@ filter: brightness(10);
     }
 
     .playAndImg {
-        width: 150.797px;
-        height: 150.797px;
+        width: 152.797px;
+        height: 152.797px;
     }
 
     .playAndImg img {
