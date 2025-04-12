@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <meta name="description"
+        content="Siphan's here: A Spotify-Inspired Music Streaming Platform. Features: Responsive Web Player, Dynamic Playlists, and Artist Exploration. Built for Web Dev Practice!">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hamburger">
+            <img class="invert" src="Svg/spotifyLogo.svg" alt="spotifyLogo">
+        <div class="right">
+            <img src="Svg/spotifySearch.svg" alt="searchIco">
+            <button>Open App</button>
+            <img class="hamburgerIco" src="Svg/hamburger.svg" alt="hamburgerSvg">
+        </div>
+    </div>
+    <div class="closeBtn">
+        <img src="Svg/close.svg" alt="closeSvg">
+    </div>
+    <header>
+        <div class="first flex">
+            <img class="invert" src="Svg/spotifyLogo.svg" alt="logo">
+        </div>
+        <div class="second flex">
+            <div class="home flex">
+                <img src="Svg/spotifyHome.svg" alt="homeIcon">
+            </div>
+            <div class="search">
+                <img src="Svg/spotifySearch.svg" alt="searchIcon">
+            </div>
+            <form action="">
+                <input type="search" placeholder="What do you want to play?">
+            </form>
+            <div class="inpHov">
+                <p>Ctrl</p>
+                <p>K</p>
+            </div>
+            <div class="browse">
+                <img class="invert" src="Svg/spotifyBrowse.svg" alt="browseIcon">
+            </div>
+        </div>
+        <div class="third">
+            <nav class="flex">
+                <ul class="flex psd">
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li></li>
+                    <li class="flex downIns">
+                        <img src="Svg/spotifyDownload.svg" alt="downloadIcon">
+                        <a href="#">Install App</a>
+                    </li>
+                </ul>
+                <ul class="signUpAndLogin flex">
+                    <li></li>
+                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="flex">
+        <div class="left">
+            <div class="library flex">
+                <h2>Your Library</h2>
+                <div>
+                    <img src="Svg/spotifyAdd.svg" alt="addIcon">
+                </div>
+            </div>
+            <div class="cardContainer flex">
+                <div class="card card1">
+                    <div class="text1">
+                        <strong>Create your first playlist</strong>
+                        <p>It's easy, we'll help you</p>
+                    </div>
+                    <div class="button1">
+                        <button>Create playlists</button>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <div class="text2">
+                        <strong>Let's find some podcasts to follow </strong>
+                        <p>We'll keep you updated on new episodes</p>
+                    </div>
+                    <div class="button2">
+                        <button>Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+            <div class="someLinks">
+                <div class="leftLinks">
+                    <ul>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Safety & Privacy Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">About Ads</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="langIcon">
+                    <button class="flex">
+                        <img src="Svg/spotifyLang.svg" alt="langIcon">
+                        <span>English</span>
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="resizer">
+            <p></p>
+        </div>
+        <div class="right">
+            <div class="subCategories">
+                <section class="songsCard">
+                    <div class="text flex">
+                        <a href="#">Trending songs</a>
+                        <a href="#">Show all</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e026d9a2050e82ce05424dca5aa.jpg" alt="">
+                            </div>
+                            <a href="#">Shree Hanuman Chalisha</a>
+                            <span>
+                                <a href="#">Hariharan</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e0283141000ee8ce3b893a0b425.jpg" alt="">
+                            </div>
+                            <a href="#">Finding Her</a>
+                            <span>
+                                <a href="#">Kushagra</a>,
+                                <a href="#">Bharath</a>,
+                                <a href="#">Saaheal</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e025fe9856a449aab589c06b6c8.jpg" alt="">
+                            </div>
+                            <a href="#">Paro</a>
+                            <span>
+                                <a href="#">Aditya Rikhari</a>,
+                                <a href="#">UNPLG'd</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="img/ab67616d00001e02116633561ca7705cdbcc9656.jpg" alt="">
+                            </div>
+                            <a href="#">Kanimaa (From "Retro")</a>
+                            <span>
+                                <a href="#">Santhosh Narayanan</a>,
+                                <a href="#">The Indian Choral Ensemble</a>,
+                                <a href="#">Vivek</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e021344800458a38197bfc721f3.jpg" alt="">
+                            </div>
+                            <a href="#">Jhol</a>
+                            <span>
+                                <a href="#">Maanu</a>,
+                                <a href="#">Annural Khalid</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e02931b61b7382db17ed15e75fc.jpg" alt="">
+                            </div>
+                            <a href="#">Maand</a>
+                            <span>
+                                <a href="#">Bayaan</a>,
+                                <a href="#">Hasan Raheem</a>,
+                                <a href="#">Rovalio</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e02773c5f60bcb309ef8802e4ef.jpg" alt="">
+                            </div>
+                            <a href="#">Raanjhan (From "Do Patti")</a>
+                            <span>
+                                <a href="#">Sachet-Parampara</a>,
+                                <a href="#">Parampara Tandon</a>,
+                                <a href="#">Kausar Munir</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e02bd36c37fc3755a680b269873.jpg" alt="">
+                            </div>
+                            <a href="#">Premalo (From "Court")</a>
+                            <span>
+                                <a href="#">Vijai Bulganin</a>,
+                                <a href="#">Anurag Kulkarni</a>,
+                                <a href="#">Sameera Bharadwaj</a>,
+                                <a href="#">Purnachary</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e022ec9889c4127d1b6a30d9887.jpg" alt="">
+                            </div>
+                            <a href="#">twilight zone</a>
+                            <span>
+                                <a href="#">Ariana Grande</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e020b59e57e5658ee16ffbb127a.jpg" alt="">
+                            </div>
+                            <a href="#">Qatal</a>
+                            <span>
+                                <a href="#">Guru Randhawa</a>,
+                                <a href="#">Sanjoy</a>,
+                                <a href="#">Gill Machhrai</a>
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="songsCard">
+                    <div class="text flex">
+                        <a href="#">Popular artists</a>
+                        <a href="#">Show all</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616100005174cb6926f44f620555ba444fca.jpg" alt="">
+                            </div>
+                            <a href="#">Pritam</a>
+                            <span>
+                                <a href="#">Artist</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616100005174b19af0ea736c6228d6eb539c.jpg" alt="">
+                            </div>
+                            <a href="#">A.R. Rahman</a>
+                            <span>
+                                <a href="#">Artist</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img id="imgFix" src="Img/ab676161000051745ba2d75eb08a2d672f9b69b7.jpg" alt="">
+                            </div>
+                            <a href="#">Arijit Singh</a>
+                            <span>
+                                <a href="#">Artist</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="img/ab67616100005174b69f6182a27407318b632a5f.jpg" alt="">
+                            </div>
+                            <a href="#">Sachin-Jigar</a>
+                            <span>
+                                <a href="#">Artist</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab6761610000517490b6c3d093f9b02aad628eaf.jpg" alt="">
+                            </div>
+                            <a href="#">Vishal-Shekhar</a>
+                            <span>
+                                <a href="#">Artist</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616100005174c40600e02356cc86f0debe84.jpg" alt="">
+                            </div>
+                            <a href="#">Atif Aslam</a>
+                            <span>
+                                <a href="#">Artist</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab676161000051740f0be2054fe9594026a6b843.jpg" alt="">
+                            </div>
+                            <a href="#">Anirudh Ravichander</a>
+                            <span>
+                                <a href="#">Artist</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616100005174bc7e4fffd515b47ff1ebbc1f.jpg" alt="">
+                            </div>
+                            <a href="#">Yo Yo Honey Singh</a>
+                            <span>
+                                <a href="#">Artist</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab676161000051748de0e6e7e55d7773931ab7f4.jpg" alt="">
+                            </div>
+                            <a href="#">Udit Narayan</a>
+                            <span>
+                                <a href="#">Artist</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab676161000051743db0499a689aa9b4a47ebba3.jpg" alt="">
+                            </div>
+                            <a href="#">Shankar-Ehsaan-Loy</a>
+                            <span>
+                                <a href="#">Artist</a>
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="songsCard">
+                    <div class="text flex">
+                        <a href="#">Popular albums and singles</a>
+                        <a href="#">Show all</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e02f000fdbe92e9a1058034fd33.jpg" alt="">
+                            </div>
+                            <a href="#">Happy Bhag Jayegi</a>
+                            <span>
+                                <a href="#">Himesh Reshammiya</a>,
+                                <a href="#">Sameer Anjaan</a>,
+                                <a href="#">Subrat Sinha</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e02707ea5b8023ac77d31756ed4.jpg" alt="">
+                            </div>
+                            <a href="#">Yeh Jawaani Hai Deewani</a>
+                            <span>
+                                <a href="#">Pritam</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e026404721c1943d5069f0805f3.jpg" alt="">
+                            </div>
+                            <a href="#">Aashiqui 2</a>
+                            <span>
+                                <a href="#">Mithoon</a>,
+                                <a href="#">Ankit Tiwari</a>,
+                                <a href="#">Jeet Gannguli</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e02a5183fa4b99bcec1f506418d.jpg" alt="">
+                            </div>
+                            <a href="#">Young G.O.A.T</a>
+                            <span>
+                                <a href="#">Cheema Y</a>,
+                                <a href="#">Gur Sidhu</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e02aad3f4b601ae8763b3fc4e88.jpg" alt="">
+                            </div>
+                            <a href="#">Glory</a>
+                            <span>
+                                <a href="#">Yo Yo Honey Singh</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e02e005c1f068091493afd80816.jpg" alt="">
+                            </div>
+                            <a href="#">Happy Bhag Jayegi</a>
+                            <span>
+                                <a href="#">Eros International</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e02773c5f60bcb309ef8802e4ef.jpg" alt="">
+                            </div>
+                            <a href="#">Raanjhan (From "Do Patti")</a>
+                            <span>
+                                <a href="#">Sachet-Parampara</a>,
+                                <a href="#">Parampara Tandon</a>,
+                                <a href="#">Kausar Munir</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e021aa5adad8593923dcdf1a7d0.jpg" alt="">
+                            </div>
+                            <a href="#">Ultimate Love Songs - Arijit Singh</a>
+                            <span>
+                                <a href="#">Arijit Singh</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e0279f4a87c23143f0abb14c279.jpg" alt="">
+                            </div>
+                            <a href="#">Mismatched: Season 3 (Soundtrack from the Netflix Series)</a>
+                            <span>
+                                <a href="#">Mismatched - Cast</a>
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67616d00001e026138560a7e7475706e900d3c.jpg" alt="">
+                            </div>
+                            <a href="#">Sicario</a>
+                            <span>
+                                <a href="#">Shubh</a>
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="songsCard">
+                    <div class="text flex">
+                        <a href="#">Popular radio</a>
+                        <a href="#">Show all</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/en.jpg" alt="">
+                            </div>
+                            <span>
+                                With Sachin-Jigar, Amit Trivedi, Mithoon and more
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/en (1).jpg" alt="">
+                            </div>
+                            <span>
+                                With Karan Aujla, Shubh, Sidhu Moose Wala and more
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/en (2).jpg" alt="">
+                            </div>
+                            <span>
+                                With A.R. Rahman, Vishal-Shekhar, Atif Aslam and more
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/en (3).jpg" alt="">
+                            </div>
+                            <span>
+                                With Armaan Malik, Mohit Chauhan, Atif Aslam and more
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/en (4).jpg" alt="">
+                            </div>
+                            <span>
+                                With Khasa Aala Chahar, Sumit Parta, Amanraj Gill and more
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/en (5).jpg" alt="">
+                            </div>
+                            <span>
+                                With Mohammed Rafi, Mukesh, Tabassum and more
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/en (6).jpg" alt="">
+                            </div>
+                            <span>
+                                With Yo Yo Honey Singh, Harrdy Sandhu, Aastha Gill and more
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/en (7).jpg" alt="">
+                            </div>
+                            <span>
+                                With Alka Yagnik, Jatin-Lalit, Vinod Rathod and more
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/en-GB.jpg" alt="">
+                            </div>
+                            <span>
+                                With Kishor Kumar, Mohammed, Mukesh and more
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/en (8).jpg" alt="">
+                            </div>
+                            <span>
+                                With Badshah, Diljit Dosanjh, Guru Randhawa and more
+                            </span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/en (9).jpg" alt="">
+                            </div>
+                            <span>
+                                With Abhijeet, Uttam Singh, Alka Yagnik and more
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="songsCard">
+                    <div class="text flex">
+                        <a href="#">Featured cards</a>
+                        <a href="#">Show all</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/region_global_default.jpg" alt="">
+                            </div>
+                            <span>Your weekly update of the most played tracks right now - Global.</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/region_in_default.jpg" alt="">
+                            </div>
+                            <span>Your weekly update of the most played tracks right now - India.</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/region_global_default (1).jpg" alt="">
+                            </div>
+                            <span>Your daily update of the most played tracks right now - Global.</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/region_in_default (1).jpg" alt="">
+                            </div>
+                            <span>Your daily update of the most played tracks right now - India.</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/region_global_default (2).jpg" alt="">
+                            </div>
+                            <span>Your daily update of the most viral tracks right now - Global.</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/region_in_default (3).jpg" alt="">
+                            </div>
+                            <span>Your daily update of the most viral tracks right now - India.</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="songsCard">
+                    <div class="text flex">
+                        <a href="#">India's best</a>
+                        <a href="#">Show all</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67706f0000000263e1e15c30be55364a728c2d.jpg" alt="">
+                            </div>
+                            <span>Check out the songs Chennai is vibing to!</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67706f00000002e3fbd31d5cb1cef2e6d00ae9.jpg" alt="">
+                            </div>
+                            <span>Check out the songs Rajasthan is vibing to!</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67706f000000029050f5195772c2a7ee8e61f8.jpg" alt="">
+                            </div>
+                            <span>Check out the songs Delhi is vibing to.</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67706f000000020883d4b731c7ef948193bee6.jpg" alt="">
+                            </div>
+                            <span>Check out the songs Hyderabad is vibing to!</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67706f000000028f10ecc2be9126b2309ea5fd.jpg" alt="">
+                            </div>
+                            <span>Bollywood Central, jab baje toh seedha dil ke centre mein lage 🫶🏼 Cover -
+                                TBMAUJ</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67706f0000000236c8249fea736cd36978a562.jpg" alt="">
+                            </div>
+                            <span>India's Rap Scene. Cover - Badshah</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67706f0000000241d850fa743e1ebf012a686e.jpg" alt="">
+                            </div>
+                            <span>Biggest Haryanvi hits from the last 10 years. Cover: Raju Punjabi</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67706f000000022b56c3f8028b17736c37e597.jpg" alt="">
+                            </div>
+                            <span>Ultimate 101 Punjabi Hits with Jassie Gill</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67706f00000002ed9af7974cb083220f850e72.jpg" alt="">
+                            </div>
+                            <span>Finest collection of Tamil Music from the past 10 years Cover: Dragon</span>
+                        </li>
+                        <li>
+                            <div class="playAndImg">
+                                <div class="playIcon">
+                                    <img src="Svg/spotifyPlayIcon.svg" alt="playIcon">
+                                </div>
+                                <img src="Img/ab67706f00000002e863ce9df6955fed82d56257.jpg" alt="">
+                            </div>
+                            <span>Hottest tracks from your favourite I-Pop Icons. Cover: Diljit Dosanjh</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <footer>
+                <ul>
+                    <li>
+                        <strong>Company</strong>
+                        <a href="#">About</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">For the Record</a>
+                    </li>
+                    <li>
+                        <strong>Communities</strong>
+                        <a href="#">For Artists</a>
+                        <a href="#">Developers</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Investors</a>
+                        <a href="#">Vendors</a>
+                    </li>
+                    <li>
+                        <strong>Useful links</strong>
+                        <a href="#">Support</a>
+                        <a href="#">Free Mobile App</a>
+                    </li>
+                    <li>
+                        <strong>Spotify Plans</strong>
+                        <a href="#">Premium Individual</a>
+                        <a href="#">Premium Duo</a>
+                        <a href="#">Premium Family</a>
+                        <a href="#">Premium Student</a>
+                        <a href="#">Spotify Free</a>
+                    </li>
+                    <ul class="socialLinks">
+                        <li>
+                            <img src="Svg/spotifyInstagram.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="Svg/spotifyTwitter.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="Svg/spotifyFacebook.svg" alt="">
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <p>© 2025 Spotify AB</p>
+                </ul>
+            </footer>
+        </div>
+    </main>
+    <footer>
+        <nav class="flex">
+            <ul class="flex">
+                <li>
+                    <a href="#">Preview of Spotify</a>
+                </li>
+                <li>
+                    <a href="#">Sign up to get unlimited songs and podcasts with occasional ads. No credit card
+                        needed.</a>
+                </li>
+            </ul>
+            <ul>
+                <button class="signUp">
+                    <a href="#">Sign up free</a>
+                </button>
+            </ul>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
