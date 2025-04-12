@@ -1091,8 +1091,10 @@ header .second:hover {
     }
 
     .songsCard ul {
+        flex-wrap: nowrap;
         justify-content: flex-start;
         gap: 0;
+        padding-left: 8px;
     }
 
     .songsCard ul li {
