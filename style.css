@@ -5,6 +5,7 @@
 
 html {
     font-size: 16px;
+    overflow: hidden;
 }
 
 body {
@@ -312,7 +313,8 @@ footer nav>ul>li:last-child a:last-child {
 }
 
 .downIns {
-    gap: 5px;margin-left: 5px;
+    gap: 5px;
+    margin-left: 5px;
     margin-right: 15px;
 }
 
@@ -785,7 +787,7 @@ nav ul button a {
     border-radius: 50px;
     position: absolute;
     right: 12px;
-    bottom: 25px;
+    bottom: 22px;
     background-color: #1ed760;
     opacity: var(--playOpi);
 }
@@ -881,14 +883,14 @@ header .second:hover {
     header {
         position: absolute;
         top: 0;
-        left: -300px;
+        right: -300px;
         display: flex;
         flex-direction: column;
         align-items: baseline;
         z-index: 10;
         width: 300px;
         overflow: hidden;
-        height: calc(100% - 58.5px);
+        height: calc(100% - 57.5px);
     }
 
     body>footer {
@@ -916,7 +918,7 @@ header .second:hover {
 
     .right {
         width: 100%;
-        overflow-x: hidden;
+        overflow-x: hidden;border-radius: 0;
     }
 
     .hamburger {
@@ -1008,6 +1010,7 @@ header .second:hover {
 @media screen and (min-width: 1374px) {
     header {
         display: flex;
+        width: 100%;
         height: 48px;
         background-color: black;
         justify-content: space-around;
@@ -1113,13 +1116,21 @@ header .second:hover {
         align-items: center;
         width: 15px;
         height: 15px;
+        bottom: 12px;
     }
 
     .playIcon img {
         transform: scale(1.35);
     }
 
-    .songsCard ul::-webkit-scrollbar, .songsCard:nth-child(5)::-webkit-scrollbar {
+    .songsCard ul::-webkit-scrollbar,
+    .songsCard:nth-child(1)::-webkit-scrollbar,
+    .songsCard:nth-child(2)::-webkit-scrollbar,
+    .songsCard:nth-child(3)::-webkit-scrollbar,
+    .songsCard:nth-child(4)::-webkit-scrollbar,
+    .songsCard:nth-child(5)::-webkit-scrollbar,
+    .songsCard:nth-child(6)::-webkit-scrollbar
+     {
         display: none;
     }
 
@@ -1133,28 +1144,28 @@ header .second:hover {
         padding-top: 0;
     }
 
-    .leftLinks {        display: flex
-        ;
-                justify-content: center;
-                border-top: 1px solid #b3b3b3;
-                width: calc(100vw - 50px);
-                margin: auto;
+    .leftLinks {
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #7c7c7c;
+        width: calc(100vw - 50px);
+        margin: auto;
     }
 
     footer ul:first-child {
         padding-bottom: 0;
     }
 
-    .leftLinks ul:first-child  {
+    .leftLinks ul:first-child {margin-top: 20px;
         padding-left: 0;
         margin-left: 0;
     }
 
-    .lasLinks .leftLinks ul li a{
+    .lasLinks .leftLinks ul li a {
         font-size: 0.84rem;
     }
 
-    main footer ul:nth-child(2)  {
+    main footer ul:nth-child(2) {
         display: none;
     }
 
@@ -1163,12 +1174,13 @@ header .second:hover {
     }
 
     .right {
-        background-color: black;    border-radius: 0;
+        background-color: #121212;
+        border-radius: 0;
 
     }
-
+    
     .songsCard:first-child {
-        background: black;
+    background-color: #121212;
     }
 
     body {
@@ -1178,12 +1190,11 @@ header .second:hover {
     }
 
     main {
-        height: 100vh;
         margin-right: 0;
     }
 
     header {
-        left: -575px;
+        right: -575px;
         width: 100vw;
         height: 100vh;
         flex-direction: column-reverse;
@@ -1290,7 +1301,7 @@ header .second:hover {
     }
 
     main footer .socialLinks {
-        margin: 10px -25px;
+        margin: 10px -25px;margin-bottom: 25px;
     }
 
     .right::-webkit-scrollbar {
