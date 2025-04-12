@@ -532,7 +532,7 @@ footer nav>ul>li:last-child a:last-child {
 }
 
 .songsCard:nth-child(1) {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .songsCard ul {
@@ -1134,7 +1134,7 @@ filter: brightness(10);
 
 
     .songsCard ul li {
-        width: 150px;
+        width: 155px;
         flex-shrink: 0;
         gap: 15px;
         padding: 8px;
@@ -1328,8 +1328,8 @@ filter: brightness(10);
     }
 
     .playAndImg {
-        width: 150.797px;
-        height: 150.797px;
+        width: 155.797px;
+        height: 155.797px;
     }
 
     .playAndImg img {
