@@ -1092,11 +1092,13 @@ header .second:hover {
 
     .songsCard ul {
         justify-content: flex-start;
+        gap: 0;
     }
 
     .songsCard ul li {
         width: 150px;
         flex-shrink: 0;
+        gap: 15px;
     }
 
     .songsCard ul li img {
