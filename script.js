@@ -40,13 +40,14 @@ function openMenu() {
     header.style.top = "43px";
     header.style.right = "0";
     header.style.transition = "right 200ms ease-in";
+
     document.querySelector(".psd li:nth-child(2)>a").textContent = "Help"
     document.querySelector(".downIns a").textContent = "Privacy"
-   
+    
     if (document.querySelector(".psd li:last-child").textContent.trim() === "Privacy") {
         document.querySelector(".psd").innerHTML += "<li>Terms</li>"
     }
-
+    
     closeBtn.style.display = "flex";
     closeBtn.style.justifyContent = "end"
     hamburger.style.display = "none";
@@ -56,6 +57,10 @@ function closeMenu() {
     header.style.right = "-575px";
     hamburger.style.display = "flex";
     closeBtn.style.display = "none";
+
+    document.querySelector(".psd li:nth-child(2)>a").textContent = "Support"
+    document.querySelector(".downIns a").textContent = "Install App"
+    document.querySelector(".psd li:last-child").style.display = "none"
 }
 
 function resetStyles() {
