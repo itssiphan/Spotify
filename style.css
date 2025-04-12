@@ -1134,7 +1134,7 @@ filter: brightness(10);
 
 
     .songsCard ul li {
-        width: 155px;
+        width: 150px;
         flex-shrink: 0;
         gap: 15px;
         padding: 8px;
@@ -1328,8 +1328,8 @@ filter: brightness(10);
     }
 
     .playAndImg {
-        width: 155.797px;
-        height: 155.797px;
+        width: 150.797px;
+        height: 150.797px;
     }
 
     .playAndImg img {
@@ -1342,8 +1342,7 @@ filter: brightness(10);
     }
 
     .right::-webkit-scrollbar {
-        width: 0;
-        display: none;
+        width: 4px;
     }
 
     .hamburger .right img:first-child,
