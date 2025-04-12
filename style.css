@@ -1083,18 +1083,16 @@ header .second:hover {
 
     .songsCard ul {
         flex-wrap: nowrap;
-    }
-
-    .songsCard {
-        overflow: auto;
-        padding: 0;
-    }
-
-    .songsCard ul {
-        flex-wrap: nowrap;
         justify-content: flex-start;
         gap: 0;
-        padding-left: 8px;
+        padding-left: 4px;
+    }
+
+    .songsCard ul li {
+        width: 150px;
+        flex-shrink: 0;
+        gap: 15px;
+        padding: 8px;
     }
 
     .songsCard ul li {
