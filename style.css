@@ -1133,8 +1133,12 @@ header .second:hover {
         padding-top: 0;
     }
 
-    .leftLinks {display: flex;
-        justify-content: center;
+    .leftLinks {        display: flex
+        ;
+                justify-content: center;
+                border-top: 1px solid #b3b3b3;
+                width: calc(100vw - 50px);
+                margin: auto;
     }
 
     footer ul:first-child {
@@ -1142,11 +1146,12 @@ header .second:hover {
     }
 
     .leftLinks ul:first-child  {
-        border-top: 1px solid #b3b3b3;
+        padding-left: 0;
         margin-left: 0;
-        width: 80vw;
-        padding-bottom: 0;
-        margin-right: 0;padding-top: 30px;
+    }
+
+    .lasLinks .leftLinks ul li a{
+        font-size: 0.84rem;
     }
 
     main footer ul:nth-child(2)  {
@@ -1158,7 +1163,8 @@ header .second:hover {
     }
 
     .right {
-        background-color: black;
+        background-color: black;    border-radius: 0;
+
     }
 
     .songsCard:first-child {
@@ -1232,7 +1238,11 @@ header .second:hover {
     }
 
     .subCategories {
-        gap: 5px;
+        gap: 10px;
+    }
+
+    .langIcon button {
+        padding: 7px 15px;
     }
 
     .subCategories section:nth-child(2) img {
