@@ -34,13 +34,19 @@ const hamburger = document.querySelector(".hamburger");
 const linMark = document.querySelector(".signUpAndLogin")
 const hamburgerImg = document.querySelector(".hamburger img:last-child");
 const closeBtnImg = document.querySelector(".closeBtn img");
-const mediaQuery = window.matchMedia("(max-width: 1140px)");
+const mediaQuery1140 = window.matchMedia("(max-width: 1140px)");
 
 function openMenu() {
     header.style.top = "43px";
     header.style.left = "0";
     header.style.transition = "left 200ms ease-in";
     header.style.borderRadius = "8px 0 0 8px";
+    document.querySelector(".psd li:nth-child(2)>a").textContent = "Help"
+    document.querySelector(".downIns a").textContent = "Privacy"
+   
+    if (document.querySelector(".psd li:last-child").textContent.trim() === "Privacy") {
+        document.querySelector(".psd").innerHTML += "<li>Terms</li>"
+    }
 
     closeBtn.style.display = "flex";
     closeBtn.style.justifyContent = "end"
@@ -59,7 +65,7 @@ function resetStyles() {
     hamburger.style = "";
 }
 
-function handleMediaChange(e) {
+function handleMedia1140(e) {
     if (e.matches)
     {
         hamburgerImg.addEventListener("click", openMenu);
@@ -72,8 +78,8 @@ function handleMediaChange(e) {
     }
 }
 
-handleMediaChange(mediaQuery);
-mediaQuery.addEventListener("change", handleMediaChange);
+handleMedia1140(mediaQuery1140);
+mediaQuery1140.addEventListener("change", handleMedia1140);
 
 const resizer = document.querySelector('.resizer');
 const left = document.querySelector('.left');
@@ -134,3 +140,18 @@ document.addEventListener('mouseup', () => {
 document.querySelector(".cardContainer").addEventListener("scroll", () => {
     document.querySelector(".library").style.boxShadow = "0 6px 10px #00000099"
 })
+
+const footerUl = document.querySelector("main footer ul:nth-child(2)")
+const someLinks = document.querySelector(".someLinks")
+
+const mediaQuery575 = window.matchMedia("(max-width: 575px)")
+
+function handleMedia575(e) {
+    if (e.matches)
+    {
+        // footerUl.innerHTML += someLinks.innerHTML
+        footerUl.insertAdjacentHTML('beforebegin',`${someLinks.innerHTML}`)
+    }
+}
+
+handleMedia575(mediaQuery575);
