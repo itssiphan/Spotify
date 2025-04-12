@@ -141,17 +141,32 @@ document.querySelector(".cardContainer").addEventListener("scroll", () => {
     document.querySelector(".library").style.boxShadow = "0 6px 10px #00000099"
 })
 
-const footerUl = document.querySelector("main footer ul:nth-child(2)")
-const someLinks = document.querySelector(".someLinks")
+const footerUl = document.querySelector("main footer ul:nth-child(2)");
+const someLinks = document.querySelector(".someLinks");
+const mediaQuery575 = window.matchMedia("(max-width: 575px)");
 
-const mediaQuery575 = window.matchMedia("(max-width: 575px)")
+let insertedElement = null;
 
 function handleMedia575(e) {
     if (e.matches)
     {
-        // footerUl.innerHTML += someLinks.innerHTML
-        footerUl.insertAdjacentHTML('beforebegin',`${someLinks.innerHTML}`)
+        if (!insertedElement)
+        {
+            insertedElement = document.createElement("div");
+            insertedElement.setAttribute("class", "lasLinks")
+            insertedElement.innerHTML = someLinks.innerHTML;
+            footerUl.parentNode.insertBefore(insertedElement, footerUl);
+        }
+    } else
+    {
+        if (insertedElement)
+        {
+            insertedElement.remove();
+            insertedElement = null;
+        }
     }
 }
 
 handleMedia575(mediaQuery575);
+
+mediaQuery575.addEventListener("change", handleMedia575);
