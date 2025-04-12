@@ -1095,7 +1095,7 @@ header .second:hover {
     }
 
     .songsCard ul li {
-        width: 135px;
+        width: 150px;
         flex-shrink: 0;
     }
 
@@ -1208,7 +1208,7 @@ header .second:hover {
 
     .songsCard>.text a:nth-child(1) {
         font-weight: 500;
-        font-size: 1.55rem;
+        font-size: 1.25rem;
         padding: 5px 0px;
     }
 
@@ -1223,13 +1223,13 @@ header .second:hover {
     }
 
     .songsCard li>a {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         font-weight: unset;
         margin-left: 3px;
     }
 
     .songsCard span {
-        font-size: 0.6875rem;
+        font-size: 0.9rem;
     }
 
     .subCategories>section:nth-child(1)>ul,
@@ -1238,8 +1238,8 @@ header .second:hover {
     }
 
     .playAndImg {
-        width: 135.797px;
-        height: 135.797px;
+        width: 150.797px;
+        height: 150.797px;
     }
 
     .playAndImg img {
