@@ -1090,7 +1090,7 @@ header .second:hover {
         flex-wrap: nowrap;
         justify-content: flex-start;
         gap: 0;
-        padding-left: 4px;
+        padding-left: 7px;
     }
 
 
@@ -1119,7 +1119,7 @@ header .second:hover {
         transform: scale(1.35);
     }
 
-    .songsCard ul::-webkit-scrollbar {
+    .songsCard ul::-webkit-scrollbar, .songsCard:nth-child(5)::-webkit-scrollbar {
         display: none;
     }
 
@@ -1129,8 +1129,32 @@ header .second:hover {
         padding: 25px;
     }
 
-    .socialLinks {
-        display: flex
+    main footer .socialLinks {
+        padding-top: 0;
+    }
+
+    .leftLinks {display: flex;
+        justify-content: center;
+    }
+
+    footer ul:first-child {
+        padding-bottom: 0;
+    }
+
+    .leftLinks ul:first-child  {
+        border-top: 1px solid #b3b3b3;
+        margin-left: 0;
+        width: 80vw;
+        padding-bottom: 0;
+        margin-right: 0;padding-top: 30px;
+    }
+
+    main footer ul:nth-child(2)  {
+        display: none;
+    }
+
+    main footer p {
+        padding-top: 0;
     }
 
     .right {
@@ -1174,6 +1198,14 @@ header .second:hover {
 
     .third nav * {
         color: white;
+    }
+
+    .third nav ul:nth-child(1) * {
+        font-size: 1.1rem;
+    }
+
+    .third nav ul:nth-child(2) * {
+        font-size: 1.2rem;
     }
 
     .downIns {
