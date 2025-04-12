@@ -531,6 +531,10 @@ footer nav>ul>li:last-child a:last-child {
     padding: 12px;
 }
 
+.songsCard:nth-child(1) {
+    margin-top: 15px;
+}
+
 .songsCard ul {
     display: flex;
     flex-wrap: wrap;
@@ -544,9 +548,13 @@ footer nav>ul>li:last-child a:last-child {
     align-self: baseline;
 }
 
-.subCategories>section:nth-child(1)>ul,
-.subCategories>section:nth-child(3)>ul {
+.subCategories>section:nth-child(1)>ul {
     max-height: 269.88px;
+    overflow-y: hidden;
+}
+
+.subCategories>section:nth-child(3)>ul {
+    max-height: 262.88px;
     overflow-y: hidden;
 }
 
