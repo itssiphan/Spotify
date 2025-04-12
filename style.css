@@ -918,7 +918,8 @@ header .second:hover {
 
     .right {
         width: 100%;
-        overflow-x: hidden;border-radius: 0;
+        overflow-x: hidden;
+        border-radius: 0;
     }
 
     .hamburger {
@@ -1129,8 +1130,7 @@ header .second:hover {
     .songsCard:nth-child(3)::-webkit-scrollbar,
     .songsCard:nth-child(4)::-webkit-scrollbar,
     .songsCard:nth-child(5)::-webkit-scrollbar,
-    .songsCard:nth-child(6)::-webkit-scrollbar
-     {
+    .songsCard:nth-child(6)::-webkit-scrollbar {
         display: none;
     }
 
@@ -1156,7 +1156,8 @@ header .second:hover {
         padding-bottom: 0;
     }
 
-    .leftLinks ul:first-child {margin-top: 20px;
+    .leftLinks ul:first-child {
+        margin-top: 20px;
         padding-left: 0;
         margin-left: 0;
     }
@@ -1178,9 +1179,9 @@ header .second:hover {
         border-radius: 0;
 
     }
-    
+
     .songsCard:first-child {
-    background-color: #121212;
+        background-color: #121212;
     }
 
     body {
@@ -1301,7 +1302,8 @@ header .second:hover {
     }
 
     main footer .socialLinks {
-        margin: 10px -25px;margin-bottom: 25px;
+        margin: 10px -25px;
+        margin-bottom: 25px;
     }
 
     .right::-webkit-scrollbar {
