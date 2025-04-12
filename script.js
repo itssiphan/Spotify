@@ -38,9 +38,8 @@ const mediaQuery1140 = window.matchMedia("(max-width: 1140px)");
 
 function openMenu() {
     header.style.top = "43px";
-    header.style.left = "0";
-    header.style.transition = "left 200ms ease-in";
-    header.style.borderRadius = "8px 0 0 8px";
+    header.style.right = "0";
+    header.style.transition = "right 200ms ease-in";
     document.querySelector(".psd li:nth-child(2)>a").textContent = "Help"
     document.querySelector(".downIns a").textContent = "Privacy"
    
@@ -54,7 +53,7 @@ function openMenu() {
 }
 
 function closeMenu() {
-    header.style.left = "-575px";
+    header.style.right = "-575px";
     hamburger.style.display = "flex";
     closeBtn.style.display = "none";
 }
